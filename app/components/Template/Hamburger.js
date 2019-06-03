@@ -10,7 +10,7 @@ const Hamburger = () => {
 
   return (
     <div className="hamburger-container">
-      <nav className="main" id="hambuger-nav">
+      {/* <nav className="main" id="hambuger-nav">
         <ul>
           {open ? (
             <li className="menu close-menu">
@@ -33,7 +33,7 @@ const Hamburger = () => {
             </li>
           ))}
         </ul>
-      </Menu>
+      </Menu> */}
     </div>
   );
 };
