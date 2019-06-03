@@ -10,27 +10,30 @@ const Nav = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${BASE_PATH}/images/me_icon.jpg`} alt="" />
+        <img src={`${BASE_PATH}/images/me.jpg`} alt="" />
       </Link>
       <header>
-        <h2>Michael D&apos;Angelo</h2>
-        <p><a href="mailto:michael.l.dangelo@gmail.com">michael.l.dangelo@gmail.com</a></p>
+        <h2>Kevin Mao </h2>
+        <ul>
+          <li>Software Engineer</li>
+          <li>Photographer</li>
+          <li>Explorer</li>
+        </ul>
       </header>
     </section>
 
-    <section className="blurb">
+    {/* <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Michael. I like building things.
-            I am a <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC Alumni, and
-            the co-founder and CTO of <a href="http://arthena.com">Arthena</a>. Before Arthena I was
-            at <a href="http://matroid.com">Matroid</a>, <a href="http://planet.com">Planet</a>, <a href="http://planetaryresources.com">Planetary Resources</a>, <a href="http://facebook.com">Facebook</a>, and <a href="http://seds.org">SEDS</a>.
+      <p>Hi, I&apos;m Kevin. I like coding and photography.
+        I am a <a href="https://engineering.columbia.edu/"> Columbia Engineering </a> student majoring
+        in computer science and a software engineering intern at <a href="https://tulip.co/"> Tulip </a>.
       </p>
       <ul className="actions">
         <li>
           {window.location.pathname !== `${BASE_PATH}/resume` ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
         </li>
       </ul>
-    </section>
+    </section> */}
 
     <section id="footer">
       <ul className="icons">
@@ -38,7 +41,7 @@ const Nav = () => (
           <li key={s.label}><a href={s.link}><FontAwesomeIcon icon={s.icon} /></a></li>
         ))}
       </ul>
-      <p className="copyright">&copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.</p>
+      <p className="copyright">&copy; Kevin Mao <Link to="/">kevinmao.com</Link>.</p>
     </section>
   </section>
 );

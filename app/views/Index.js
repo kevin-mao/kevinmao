@@ -6,7 +6,10 @@ import Main from '../layouts/Main';
 const Index = () => (
   <Main>
     <article className="post" id="index">
-      <header>
+        <div className="title">
+          <h2> COMING SOON</h2>
+        </div>
+      {/* <header>
         <div className="title">
           <h2><Link to="/">About this site</Link></h2>
           <p>A beautiful, responsive, react app written with modern Javascript.</p>
@@ -19,7 +22,7 @@ const Index = () => (
         view <Link to="/stats">site statistics</Link>, {' '}
         or <Link to="/contact">contact</Link> me.
       </p>
-      <p> Source available <a href="https://github.com/kevin-mao/kevin-mao.github.io">here</a>.</p>
+      <p> Source available <a href="https://github.com/kevin-mao/kevin-mao.github.io">here</a>.</p> */}
     </article>
   </Main>
 );
