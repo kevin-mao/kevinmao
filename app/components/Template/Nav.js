@@ -17,7 +17,7 @@ const Nav = () => (
         <ul>
           <li>Software Engineer</li>
           <li>Photographer</li>
-          <li>Explorer</li>
+          <li>Adventurer</li>
         </ul>
       </header>
     </section>
