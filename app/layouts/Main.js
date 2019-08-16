@@ -27,14 +27,19 @@ class Main extends Component {
 
   render() {
     return (
-      <div id="wrapper">
+      <>
         <Helmet titleTemplate="%s | Kevin Mao" defaultTitle="Kevin Mao" />
-        <Header />
-        <div id="main">
-          {this.props.children}
+        {this.props.fullPage ?
+        (<> {this.props.children} </>) :
+        (<div id="wrapper">
+          <Header />
+          <div id="main">
+            {this.props.children}
+          </div>
+          <Nav />
         </div>
-        {!this.props.fullPage && <Nav />}
-      </div>);
+        )}
+      </>);
   }
 }
 

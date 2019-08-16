@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
 import data from '../../data/contact';
 
 const Nav = () => (
@@ -14,9 +13,10 @@ const Nav = () => (
       </Link>
       <header>
         <h2>Kevin Mao </h2>
+        <p><a href="mailto:imkevinmao@gmail.com">imkevinmao@gmail.com</a></p>
         <ul>
-          <li>Software Engineer</li>
-          <li>Photographer</li>
+          <li><a href="https://www.linkedin.com/in/im-kevin-mao">Software Engineer</a></li>
+          <li><a href="https://www.instagram.com/kmaophotography/">Photographer</a></li>
           <li>Adventurer</li>
         </ul>
       </header>

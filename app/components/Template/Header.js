@@ -11,7 +11,7 @@ const Header = () => (
         <Link key={l.label} to={l.path}>{l.label}</Link>
       ))}
     </h1>
-    {/* <nav className="links">
+    <nav className="links">
       <ul>
         {routes.filter(l => !l.index).map(l => (
           <li key={l.label}>
@@ -19,7 +19,7 @@ const Header = () => (
           </li>
         ))}
       </ul>
-    </nav> */}
+    </nav>
     <Hamburger />
   </header>
 );
