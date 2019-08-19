@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import CategoryButton from './Skills/CategoryButton';
-import SkillBar from './Skills/SkillBar';
 
 const handleProps = ({ categories, skills }) => ({
   buttons: categories.map(cat => cat.name).reduce((obj, key) => ({
@@ -30,7 +29,7 @@ class Skills extends Component {
       this.state.buttons[key] ? key : cat
     ), 'All');
 
-    return this.state.skills.sort((a, b) => {
+    const skillList = this.state.skills.sort((a, b) => {
       let ret = 0;
       if (a.compentency > b.compentency) ret = -1;
       else if (a.compentency < b.compentency) ret = 1;
@@ -39,14 +38,18 @@ class Skills extends Component {
       else if (a.title > b.title) ret = 1;
       else if (a.title < b.title) ret = -1;
       return ret;
-    }).filter(skill => (actCat === 'All' || skill.category.includes(actCat)))
-      .map(skill => (
-        <SkillBar
-          categories={this.props.categories}
-          data={skill}
-          key={skill.title}
-        />
-      ));
+    }).filter(skill => (actCat === 'All' || skill.category.includes(actCat)));
+
+    return skillList.map((skill, idx) => (
+      <>
+        <li className="course-container">
+          {skill.strong ? <p className="course-name" key={skill.title}><strong>{skill.title}</strong></p>
+            : <p className="course-name" key={skill.title}>{skill.title}</p>}
+
+        </li>
+        { idx !== skillList.length - 1
+          && <div className="course-dot"><p className="course-name"> &#8226;</p></div>}
+      </>));
   }
 
   getButtons() {
@@ -75,17 +78,18 @@ class Skills extends Component {
 
   render() {
     return (
-      <div className="skills">
+      <div className="courses">
         <div className="link-to" id="skills" />
         <div className="title">
           <h3>Skills</h3>
+          <p>Things I&apos;ve used before and <strong> things I&apos;ve used a lot. </strong> </p>
         </div>
         <div className="skill-button-container">
           {this.getButtons()}
         </div>
-        <div className="skill-row-container">
+        <ul className="course-list">
           {this.getRows()}
-        </div>
+        </ul>
       </div>
     );
   }

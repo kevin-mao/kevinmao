@@ -2,6 +2,7 @@
 
 #resume {
 
+	max-width: 100em;
 	.link-to {
 		position: relative;
 		top: -4.5em;
@@ -19,7 +20,7 @@
 	}
 
 	.education {
-
+		margin-bottom: 1.6em;
 		.title {
 			text-align: center;
 			margin-bottom: 2em;
@@ -54,6 +55,7 @@
 		}
 		.course-list {
 			text-align: center;
+			overflow-wrap: break-word;
 
 			h4 {
 				white-space: nowrap;
@@ -71,7 +73,7 @@
 		}
 	}
 	.references {
-		margin: 2em 0;
+		margin: 3em 0;
 		.title {
 			text-align: center;
 		}
@@ -117,7 +119,6 @@
 
 .course-dot {
 	display: inline;
-	// display: none;
 }
 
 @include breakpoint(small) {

@@ -27,8 +27,10 @@ const Blurb = () => (
             </header>
             <section className="blurb">
               <p>I&apos;m a computer science student (class of 2021) at
-                <a href="https://engineering.columbia.edu/" target="_blank" rel="noopener noreferrer"> Columbia University </a>
-               I like to explore NYC with my camera, rock climb, and code for a cause!
+                <a href="https://engineering.columbia.edu/" target="_blank" rel="noopener noreferrer"> Columbia University</a>.
+                I was born to Chinese immigrant parents in Miami, raised in Brooklyn, moved to Staten Island,
+                 and currently attend school in Manhattan.
+                I like to explore NYC with my camera, rock climb, and code for a cause!
               </p>
               <ul className="actions">
                 <li>

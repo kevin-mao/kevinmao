@@ -40,7 +40,6 @@ const Resume = () => (
               </h4>
             ))}
           </div>
-
         </div>
       </header>
       <Education on data={degrees} />

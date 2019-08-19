@@ -6,12 +6,12 @@ const positions = [
     link: 'https://tulip.co',
     daterange: 'May 2019 - August 2019',
     points: [
-      'Worked on the Platform team at Tulip to improve their web-based tool for managing factories.',
+      'Worked on the Platform team at Tulip to improve their web-based tool for managing factories',
       'Enhanced the usability of Tables, a popular feature that allows customers to manage databases'
-      + 'without any code by building new features, such as deleting a row, a new datetime column type,'
-      + 'and real-time data syncing across services.',
+      + ' without any code by building new features, such as row deletion, a new datetime column type,'
+      + ' and real-time data syncing across services',
       'Used fullstack technologies that ranged from the backend Meteor server and Go services to the'
-       + 'frontend React and Redux.',
+       + 'frontend React and Redux',
       'Learned the best practices of developing on large-scale code bases, such as unit testing',
     ],
   },
@@ -23,8 +23,8 @@ const positions = [
     points: [
       'Improved machine learning models, including Convolutional Neural Networks and HiddenMarkov Models,'
       + ' that were designed to process neural data by using Tensorflow, Keras, and Scikit-Learn',
-      'Conducting data signal processing steps, such as PCA and FFT, optimized model parameters using'
-      + 'early stopping and grid search, and ran experiments on a Google Cloud Platform virtual machine',
+      'Conducteddata signal processing steps, such as PCA and FFT, optimized model parameters using'
+      + ' early stopping and grid search, and ran experiments on a Google Cloud Platform virtual machine',
       'Achieved 90% and higher model classification accuracy on labeled electroencephalography data sets',
     ],
   },

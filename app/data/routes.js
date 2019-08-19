@@ -13,8 +13,8 @@ const data = [
     label: 'Projects',
   },
   {
-    path: '/contact',
-    label: 'Contact',
+    path: '/photography',
+    label: 'Photography',
   },
 ];
 

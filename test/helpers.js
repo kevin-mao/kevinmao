@@ -21,14 +21,9 @@ const pages = [
     heading: 'PROJECTS',
   },
   {
-    route: '/stats',
-    title: 'Stats | Kevin Mao',
-    heading: 'STATS',
-  },
-  {
-    route: '/contact',
-    title: 'Contact | Kevin Mao',
-    heading: 'CONTACT',
+    route: '/home',
+    title: 'Photography | Kevin Mao',
+    heading: 'PHOTOGRAPHY',
   },
 ];
 
