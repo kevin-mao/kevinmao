@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
+import { Link as Scroll } from 'react-scroll';
 
 import Main from '../layouts/Main';
 
@@ -33,13 +34,16 @@ const Resume = () => (
           <div className="link-container">
             {sections.map(sec => (
               <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
-              </h4>))}
+                <Scroll activeClass="active" to={`${sec.toLowerCase()}`} spy smooth duration={500}>
+                  <a href={`${sec.toLowerCase()}`} style={{ padding: '0' }}>{sec}</a>
+                </Scroll>
+              </h4>
+            ))}
           </div>
 
         </div>
       </header>
-      <Education data={degrees} />
+      <Education on data={degrees} />
       <Experience data={positions} />
       <Skills skills={skills} categories={categories} />
       <Courses data={courses} />

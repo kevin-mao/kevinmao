@@ -2,6 +2,8 @@ import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram';
 import faLinkedinIn from '@fortawesome/fontawesome-free-brands/faLinkedinIn';
 import faEnvelope from '@fortawesome/fontawesome-free-regular/faEnvelope';
+import faFilePdf from '@fortawesome/fontawesome-free-regular/faFilePdf';
+
 
 const data = [
   {
@@ -23,6 +25,11 @@ const data = [
     link: 'mailto:imkevinmao@gmail.com',
     label: 'Email',
     icon: faEnvelope,
+  },
+  {
+    link: `${BASE_PATH}/kevin-mao.pdf`,
+    label: 'Resume',
+    icon: faFilePdf,
   },
 ];
 

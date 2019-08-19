@@ -11,7 +11,7 @@ import Projects from './views/Projects';
 import Resume from './views/Resume';
 import Stats from './views/Stats';
 import Contact from './views/Contact';
-
+import Blurb from './views/Blurb';
 import NotFound from './views/NotFound';
 
 // All of our CSS
@@ -21,6 +21,7 @@ ReactDOM.render(
   <Router basename={BASE_PATH}>
     <Switch>
       <Route exact path="/" component={Index} />
+      <Route exact path="/home" component={Blurb} />
       <Route path="/about" component={About} />
       <Route path="/projects" component={Projects} />
       <Route path="/stats" component={Stats} />

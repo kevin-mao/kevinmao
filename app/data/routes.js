@@ -1,12 +1,8 @@
 const data = [
   {
-    path: '/',
+    path: '/home',
     label: 'Kevin Mao',
     index: true,
-  },
-  {
-    path: '/about',
-    label: 'About',
   },
   {
     path: '/resume',
@@ -15,10 +11,6 @@ const data = [
   {
     path: '/projects',
     label: 'Projects',
-  },
-  {
-    path: '/stats',
-    label: 'Stats',
   },
   {
     path: '/contact',
