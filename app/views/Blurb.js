@@ -13,13 +13,13 @@ const Blurb = () => (
       <div className="container">
         <div className="row" style={{ maxWidth: '50em' }}>
 
-          <div className="col-8">
+          <div className="col-md-8 center">
             <Link to="/home" className="logo">
               <img src={`${BASE_PATH}/images/me.jpg`} alt="" />
             </Link>
           </div>
 
-          <div className="col-4" style={{ padding: '1em' }}>
+          <div className="col-md-4" style={{ padding: '1em' }}>
             <header>
               {window.location.pathname === `${BASE_PATH}/home` && <h2>Hi there.  I&apos;m  Kevin Mao.</h2> }
               <p><a href="mailto:imkevinmao@gmail.com">imkevinmao@gmail.com</a></p>
@@ -30,7 +30,8 @@ const Blurb = () => (
                 <a href="https://engineering.columbia.edu/" target="_blank" rel="noopener noreferrer"> Columbia University</a>.
                 I was born to Chinese immigrant parents in Miami, raised in Brooklyn, moved to Staten Island,
                  and currently attend school in Manhattan.
-                 I&apos;m passionate about coding for a cause, so I&apos;m always working on new <a href="/projects">projects</a>. On the side,
+                 I&apos;m an aspiring software engineer and I&apos;m passionate about coding for a cause,
+                  so I&apos;m always working on new <a href="/projects">projects</a>. On the side,
                 I like to rock climb, explore NYC with my camera, and bartend gigs.
               </p>
               <ul className="actions">

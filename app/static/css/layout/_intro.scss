@@ -33,7 +33,6 @@
 		}
 
 		@include breakpoint(large) {
-			margin: 0 0 _size(section-spacing) 0;
 			text-align: center;
 
 			header {
@@ -48,8 +47,6 @@
 		}
 
 		@include breakpoint(small) {
-			margin: 0 0 _size(section-spacing-small) 0;
-			padding: 1.25em 0;
 
 			> :last-child {
 				margin-bottom: 0;

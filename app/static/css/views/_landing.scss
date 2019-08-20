@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  overflow: hidden;
 
   .center {
     display:inline-block;
@@ -25,8 +24,11 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-
   text-align:left;
+
+  @include breakpoint(small) {
+    text-align: center;
+  }
 
   .center {
     display:inline-block;
@@ -35,18 +37,21 @@
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
-    text-align: center;
   }
 
   .row {
     display: flex;
     align-items: center;
+
+    @include breakpoint(small) {
+      display: inline;
+    }
   }
 
   h1 {
     max-height: 50%;
   }
-  
+
   .logo {
     border-bottom: 0;
     margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -57,16 +62,12 @@
       width: 20em;
       border-radius: 50%;
       display: block;
+
+      @include breakpoint(small) {
+        display: inline;
+        width: 15em;
+
+      }
     }
-
-    @include breakpoint(large) {
-			border-top: solid 1px _palette(border);
-			margin: _size(section-spacing) 0 0 0;
-			min-width: 0;
-			padding: _size(section-spacing) 0 0 0;
-			width: 100%;
-		}
   }
-
-
 }

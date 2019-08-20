@@ -6,8 +6,8 @@ const data = [
     link: 'https://www.lionbase.nyc/',
     image: '/images/projects/lionbase-banner.jpeg',
     date: '2019-1-1',
-    desc: 'Helping companies overcome challenges by building data-driven, Django applications for their specific needs.'
-    + 'In Spring 2019, we developed a dashboard to help a music licensing company better manage their database of millions'
+    desc: 'LionBase is helping companies overcome challenges by building data-driven, Django applications for their specific needs.'
+    + ' In Spring 2019, we developed a dashboard to help a music licensing company better manage their database of millions'
     + ' of songs. The dashboard included features such as anomly detection, searching, and Bokeh data visualizations.',
   },
   {
@@ -20,6 +20,16 @@ const data = [
     + ' new gyms by finding free guess passes to gyms in their area.'
     + ' The dashboard is a Flask app that collects gym data using web scraping, Microsoft Azure and Google APIs,'
     + ' and stores it in a MongoDB collection.',
+  },
+  {
+    title: 'HealthHacks 2018',
+    subtitle: 'Co-Coordinator',
+    link: 'https://healthhacks-2018.devpost.com/',
+    image: '/images/projects/healthhacks.png',
+    date: '2018-4-14',
+    desc: 'HealthHacks was a two-day hackathon that inspired creative hardware and software projects and solutions to real-world healthcare problems'
+    + ' through innovation, creativity, and interdisciplinary teamwork. I co-coordinated it with a committee at Columbia’s Biomedical Engineering Society,'
+    + ' and it brought in 50+ passionate about health tech and gave out over $1000 in prizes.',
   },
   {
     title: 'Paean Health',
