@@ -82,12 +82,13 @@ class Skills extends Component {
         <div className="link-to" id="skills" />
         <div className="title">
           <h3>Skills</h3>
-          <p>Things I&apos;ve used before and <strong> things I&apos;ve used a lot. </strong> </p>
         </div>
         <div className="skill-button-container">
           {this.getButtons()}
         </div>
         <ul className="course-list">
+          <p>Things I&apos;ve used before and <strong> things I&apos;ve used a lot. </strong> </p>
+
           {this.getRows()}
         </ul>
       </div>

@@ -14,15 +14,14 @@ const Projects = () => (
       <header>
         <div className="title">
           <h2><Link to="/projects">Projects</Link></h2>
-          <p>COMING SOON</p>
         </div>
       </header>
-      {/* {data.map(project => (
+      {data.map(project => (
         <Cell
           data={project}
           key={project.title}
         />
-      ))} */}
+      ))}
     </article>
   </Main>
 );

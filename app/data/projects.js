@@ -1,42 +1,36 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Nearest Dollar',
-    subtitle: '2015 BVP Hackathon',
-    link: '/projects/nearestdollar/',
-    image: '/images/projects/nearestdollar.jpg',
-    date: '2015-11-20',
-    desc: 'Built for a social impact hackathon. '
-      + 'NearestDollar connected to your bank accounts, credit cards, '
-      + 'or debit cards and rounded up your purchases to donate the balance to '
-      + 'the charity of your choice.',
-  }, {
-    title: 'Harvest',
-    subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
-    link: 'https://devpost.com/software/harvest',
-    image: '/images/projects/harvest.jpg',
-    date: '2015-09-20',
-    desc: 'Won ~ $7000 in prizes for an advanced, low cost monitoring solution '
-      + 'for crops. Harvest was designed to catch irrigation leaks, overwatering, '
-      + 'and nutrient deficiencies at an affordable price for the developing world.',
-  }, {
-    title: 'Space Potato',
-    subtitle: 'A kickstarter funded potato powered weather balloon.',
-    link: 'http://www.spacepotato.org',
-    image: '/images/projects/spacepotato.jpg',
-    date: '2015-06-28',
-    desc: 'Launched a potato battery powered weather balloon with two cameras '
-      + 'and gps transponder. Resulting photos were published in a coffee table book. '
-      + 'You can email me for a copy.',
-  }, {
-    title: 'Cat Detector',
-    subtitle: 'A convolutional neural network to classify cats! (and dogs)',
-    link: '/project/catdetector/',
-    image: '/images/projects/catdetector.jpg',
-    date: '2015-05-15',
-    desc: 'Trained a convolutional neural network to classify between ~ 80 cats breeds. '
-     + 'Over 60,000 cats were classified before server bills made the project too expensive '
-     + 'to continue hosting.',
+    title: 'LionBase',
+    subtitle: 'Free Lance Product Developer',
+    link: 'https://www.lionbase.nyc/',
+    image: '/images/projects/lionbase-banner.jpeg',
+    date: '2019-1-1',
+    desc: 'Helping companies overcome challenges by building data-driven, Django applications for their specific needs.'
+    + 'In Spring 2019, we developed a dashboard to help a music licensing company better manage their database of millions'
+    + ' of songs. The dashboard included features such as anomly detection, searching, and Bokeh data visualizations.',
+  },
+  {
+    title: 'Cloud Fitness',
+    subtitle: 'Creator',
+    link: 'http://www.cloudfitness.io/',
+    image: '/images/projects/cloudfitness-banner.jpg',
+    date: '2018-8-20',
+    desc: 'Cloud Fitness is a web application that helps users try out'
+    + ' new gyms by finding free guess passes to gyms in their area.'
+    + ' The dashboard is a Flask app that collects gym data using web scraping, Microsoft Azure and Google APIs,'
+    + ' and stores it in a MongoDB collection.',
+  },
+  {
+    title: 'Paean Health',
+    subtitle: 'Columbia Engineering Design Challenge Winner',
+    link: 'https://engineering.columbia.edu/news/opioid-design-challenge',
+    image: '/images/projects/opioid-banner.jpg',
+    date: '2017-12-20',
+    desc: 'In this research project, we designed and pitched the X-pouch, our solution to excessive unwanted medication, a facet of the opioid crisis.'
+    + ' The X-pouch was a small packet filled with activated carbon that patients could use to deactivate medication before disposal,'
+    + ' by simply adding water and shaking.'
+    + ' We pitched to a board of engineering professors and won $2500 in funding to continue our research.',
   },
 ];
 

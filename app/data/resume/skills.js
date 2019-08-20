@@ -32,6 +32,10 @@ export const skills = [
     strong: true,
   },
   {
+    title: 'Node.js',
+    category: ['Web Development', 'Javascript', 'Frameworks'],
+  },
+  {
     title: 'Redux',
     category: ['Web Development', 'Javascript'],
     strong: true,
