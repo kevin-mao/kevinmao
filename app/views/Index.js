@@ -39,7 +39,7 @@ const Index = () => {
 
             </div>
           </section>
-        </React.Fragment>
+          </React.Fragment>
         : <React.Fragment>
           <Header />
           <section id="landing">
@@ -47,7 +47,7 @@ const Index = () => {
               <Blurb />
             </div>
           </section>
-          </React.Fragment>
+        </React.Fragment>
       }
     </Main>
   );

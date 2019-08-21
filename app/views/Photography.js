@@ -24,7 +24,7 @@ const Photography = () => {
 
   return (
     <Main>
-      <Helmet title="Projects" />
+      <Helmet title="Photography" />
       <article className="post" id="projects">
         <header>
           <div className="title">

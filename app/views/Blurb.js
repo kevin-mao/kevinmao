@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Helmet from 'react-helmet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import data from '../data/contact';
@@ -8,6 +9,7 @@ import Header from '../components/Template/Header';
 
 const Blurb = props => (
   <React.Fragment>
+
     {window.location.pathname === `${BASE_PATH}/home` && <Header /> }
     <section id="blurb">
       <div className="container">
