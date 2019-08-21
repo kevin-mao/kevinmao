@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import data from '../data/contact';
 import Header from '../components/Template/Header';
 
-const Blurb = () => (
+const Blurb = props => (
   <React.Fragment>
     {window.location.pathname === `${BASE_PATH}/home` && <Header /> }
     <section id="blurb">
@@ -21,7 +21,7 @@ const Blurb = () => (
 
           <div className="col-md-4" style={{ padding: '1em' }}>
             <header>
-              {window.location.pathname === `${BASE_PATH}/home` && <h2>Hi there.  I&apos;m  Kevin Mao.</h2> }
+              {!props.hideTitle && <h2>Hi there.  I&apos;m  Kevin Mao.</h2> }
               <p><a href="mailto:imkevinmao@gmail.com">imkevinmao@gmail.com</a></p>
 
             </header>

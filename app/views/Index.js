@@ -18,26 +18,37 @@ const Index = () => {
 
   return (
     <Main fullPage>
-      {introduce
-      && <Header /> }
+      { window.innerWidth > 760
+        ? <React.Fragment>
+          {introduce
+        && <Header /> }
+          <section id="landing">
+            <div className="center col-sm center-block">
+              <Typist
+                cursor={cursorProps}
+                onTypingDone={() => {
+                  setIntroduce(() => true);
+                }}
+              >
+                <h2 id="typist">Hi there. <Typist.Delay ms={500} /> I&apos;m Kevin Mao. </h2>
+              </Typist>
 
-      <section id="landing">
-        <div className="center col-sm center-block">
-          <Typist
-            cursor={cursorProps}
-            onTypingDone={() => {
-              setIntroduce(() => true);
-            }}
-          >
-            <h2 id="intro">Hi there. <Typist.Delay ms={500} /> I&apos;m Kevin Mao. </h2>
-          </Typist>
+              <Fade when={introduce} duration={1500}>
+                <Blurb hideTitle />
+              </Fade>
 
-          <Fade when={introduce} duration={1500}>
-            <Blurb />
-          </Fade>
-        </div>
-      </section>
-
+            </div>
+          </section>
+        </React.Fragment>
+        : <React.Fragment>
+          <Header />
+          <section id="landing">
+            <div className="center col-sm center-block">
+              <Blurb />
+            </div>
+          </section>
+          </React.Fragment>
+      }
     </Main>
   );
 };

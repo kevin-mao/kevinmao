@@ -18,6 +18,9 @@
 				width: 20em;
 				border-radius: 50%;
 				display: block;
+				@include breakpoint(small){
+					width:15em;
+				}
 			}
 		}
 
