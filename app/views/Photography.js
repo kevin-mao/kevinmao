@@ -32,15 +32,18 @@ const Photography = () => {
             <p>Follow me on <a href="https://www.instagram.com/kmaophotography/" target="_blank" rel="noopener noreferrer">Instragram</a>!</p>
           </div>
         </header>
-        <Gallery photos={photos} direction="column" onClick={openLightbox} />
+        <Gallery photos={photos} direction="row" onClick={openLightbox} />
         <ModalGateway>
           {viewerIsOpen ? (
             <Modal onClose={closeLightbox}>
               <Carousel
-                showCloseButton
                 backdropClosesModal
                 currentIndex={currentImage}
-                views={photos}
+                views={photos.map(x => ({
+                  ...x,
+                  srcset: x.srcSet,
+                  caption: x.title
+                }))}
               />
             </Modal>
           ) : null}
