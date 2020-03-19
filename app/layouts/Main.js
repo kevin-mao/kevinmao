@@ -12,7 +12,7 @@ if (NODE_ENV === 'production') {
 }
 
 class Main extends Component {
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     window.scrollTo(0, 0);
   }
 
@@ -37,7 +37,7 @@ class Main extends Component {
               <div id="main">
                 {this.props.children}
               </div>
-              <Nav />
+              <Nav photography={this.props.photography} />
             </div>
           )}
       </>);

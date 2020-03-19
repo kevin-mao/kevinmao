@@ -10,17 +10,17 @@ const data = [
     + ' In Spring 2019, we developed a dashboard to help a music licensing company better manage their database of millions'
     + ' of songs. The dashboard included features such as anomaly detection, searching, and Bokeh data visualizations.',
   },
-  {
-    title: 'Cloud Fitness',
-    subtitle: 'Creator',
-    link: 'http://www.cloudfitness.io/',
-    image: '/images/projects/cloudfitness-banner.jpg',
-    date: '2018-8-20',
-    desc: 'Cloud Fitness is a web application that helps users try out'
-    + ' new gyms by finding free guest passes to gyms in their area.'
-    + ' The dashboard is a Flask app that collects gym data using web scraping, Microsoft Azure and Google APIs,'
-    + ' and stores it in a MongoDB collection.',
-  },
+  // {
+  //   title: 'Cloud Fitness',
+  //   subtitle: 'Creator',
+  //   link: 'http://www.cloudfitness.io/',
+  //   image: '/images/projects/cloudfitness-banner.jpg',
+  //   date: '2018-8-20',
+  //   desc: 'Cloud Fitness is a web application that helps users try out'
+  //   + ' new gyms by finding free guest passes to gyms in their area.'
+  //   + ' The dashboard is a Flask app that collects gym data using web scraping, Microsoft Azure and Google APIs,'
+  //   + ' and stores it in a MongoDB collection.',
+  // },
   {
     title: 'HealthHacks 2018',
     subtitle: 'Co-Coordinator',

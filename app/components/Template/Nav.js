@@ -5,11 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import data from '../../data/contact';
 
-const Nav = () => (
+const Nav = (props) => {
+  console.log(props.photography);
+  return (
   <section id="sidebar">
     <section id="intro">
       <Link to="/home" className="logo">
-        <img src={`${BASE_PATH}/images/me.jpg`} alt="" />
+        {
+          props.photography ? 
+          <img src={`${BASE_PATH}/images/photo-me.jpg`} alt="" /> :
+          <img src={`${BASE_PATH}/images/me.jpg`} alt="" />
+        }
       </Link>
       <header>
         <h2>Kevin Mao </h2>
@@ -23,5 +29,5 @@ const Nav = () => (
     </section>
   </section>
 );
-
+          }
 export default Nav;

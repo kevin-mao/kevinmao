@@ -19,7 +19,7 @@ class Skills extends Component {
     this.state = handleProps({ categories: props.categories, skills: props.skills });
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     this.setState(handleProps({ categories: nextProps.categories, skills: nextProps.skills }));
   }
 
