@@ -106,7 +106,13 @@ const photos = {
       width: 4,
       height: 5,
       caption: 'Kevin Mao'
-    }
+    },
+    {
+      src: '/images/photography/kelly.jpg',
+      width: 6,
+      height: 4,
+      caption: 'Kevin Mao'
+    },
   ], 
   street: [
     {

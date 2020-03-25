@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from 'react-images';
+import $ from 'jquery'; 
 
 import Main from '../layouts/Main';
 import photos from '../data/photos';
@@ -14,16 +15,19 @@ const Photography = () => {
   const [album, setAlbum] = useState(0);
   let gallery = null;
   const openLightbox = useCallback((event, { photo, index }) => {
+    $('#header')[0].style.zIndex = -1;
     setCurrentImage(index);
     setViewerIsOpen(true);
   }, []);
 
   const closeLightbox = () => {
+    $('#header')[0].style.zIndex = 1;
     setCurrentImage(0);
     setViewerIsOpen(false);
   };
 
   const switchAlbum = (e) => {
+    e.target.focus();
     const name = e.target.id;
 
     if (name == 'Portrait'){
@@ -54,7 +58,7 @@ const Photography = () => {
   } else if (album == 1){
     gallery = 
     <Fragment>
-      <Gallery photos={photos.portrait} onClick={openLightbox} />
+      <Gallery photos={photos.portrait} direction="column" onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
@@ -70,7 +74,7 @@ const Photography = () => {
   } else {
     gallery = 
     <Fragment>
-      <Gallery photos={photos.city} onClick={openLightbox} />
+      <Gallery photos={photos.city} onClick={openLightbox} autofocus />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>

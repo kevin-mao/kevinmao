@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import data from '../../data/contact';
 
 const Nav = (props) => {
-  console.log(props.photography);
   return (
   <section id="sidebar">
     <section id="intro">
