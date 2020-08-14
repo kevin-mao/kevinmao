@@ -1,6 +1,16 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: 'Columbia Virutal Campus',
+    subtitle: 'Principal Engineer',
+    link: 'https://columbiavirtualcampus.com/',
+    image: '/images/projects/cvc.jpg',
+    date: '2020-6-1',
+    desc: "Columbia Virtual Campus is helping create a virtual community for Columbia students during the COVID pandemic. \
+    As a principal engineer, I started a new initiative to build a website where students could sign up for mock coding \
+    interviews with upperclassmen, which facilitated over 60 sessions."
+  },
+  {
     title: 'LionBase',
     subtitle: 'Free Lance Product Developer',
     link: 'https://www.lionbase.nyc/',

@@ -96,8 +96,8 @@ const Photography = () => {
         <header>
           <div className="title">
             <h2><Link to="/projects">Photography</Link></h2>
-            <p>Follow me on <a href="https://www.instagram.com/kmaophotography/" target="_blank" rel="noopener noreferrer">Instragram</a>!</p>
-            <p>$50 per hour for shoots. Email to book me!</p>
+            <p>Follow me on <a href="https://www.instagram.com/kmaophotography/" target="_blank" rel="noopener noreferrer">Instragram</a>.
+            Email to book a session with me!</p>
           </div>
         </header>
 
@@ -108,6 +108,9 @@ const Photography = () => {
                 <button onClick={switchAlbum} id={c}>{c}</button>
               </li>
             ))}
+              <li style={{display: 'inline'}}>
+                <button onClick={() => window.open("https://society6.com/kevinmao", '_blank')}>Prints</button>
+              </li>
           </ul>
         </nav>
         {gallery}

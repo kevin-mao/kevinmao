@@ -5,8 +5,6 @@ export const categories = [
   {
     name: 'Data Science',
   }, {
-    name: 'Databases',
-  }, {
     name: 'Design',
   }, {
     name: 'Frameworks',
@@ -38,7 +36,6 @@ export const skills = [
   {
     title: 'Redux',
     category: ['Web Development', 'Javascript'],
-    strong: true,
   },
   {
     title: 'React',
@@ -50,10 +47,6 @@ export const skills = [
     category: ['Web Development'],
   },
   {
-    title: 'Bash',
-    category: ['Tools', 'Languages'],
-  },
-  {
     title: 'Heroku',
     category: ['Web Development', 'Tools'],
   },
@@ -62,27 +55,7 @@ export const skills = [
     category: ['Tools'],
   },
   {
-    title: 'MongoDB',
-    category: ['Databases'],
-  },
-  {
-    title: 'PostgreSQL',
-    category: ['Databases'],
-  },
-  {
-    title: 'SQLite3',
-    category: ['Databases'],
-  },
-  {
-    title: 'Matlab',
-    category: ['Data Science', 'Machine Learning', 'Languages'],
-  },
-  {
-    title: 'Data Mining',
-    category: ['Data Science', 'Machine Learning'],
-  },
-  {
-    title: 'Meteor',
+    title: 'Gatsby',
     category: ['Web Development', 'Frameworks', 'Javascript'],
   },
   {
@@ -93,11 +66,6 @@ export const skills = [
   {
     title: 'Django',
     category: ['Web Development', 'Frameworks', 'Python'],
-    strong: true,
-  },
-  {
-    title: 'Data Analysis',
-    category: ['Data Science', 'Machine Learning'],
   },
   {
     title: 'Git',
@@ -132,10 +100,6 @@ export const skills = [
     category: ['Web Development', 'Languages'],
   },
   {
-    title: 'SASS/SCSS',
-    category: ['Web Development', 'Languages'],
-  },
-  {
     title: 'Python',
     category: ['Languages', 'Python'],
     strong: true,
@@ -144,6 +108,7 @@ export const skills = [
   {
     title: 'C',
     category: ['Languages'],
+    strong: true,
   },
   {
     title: 'Photoshop',
@@ -165,7 +130,6 @@ export const skills = [
   {
     title: 'Matplotib',
     category: ['Data Science', 'Python'],
-    strong: true,
   },
   {
     title: 'Scikit-Learn',

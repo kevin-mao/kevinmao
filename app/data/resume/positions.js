@@ -1,31 +1,28 @@
 
 const positions = [
   {
-    company: 'Tulip',
+    company: 'Microsoft (Azure Data)',
     position: 'Software Engineering intern',
-    link: 'https://tulip.co',
-    daterange: 'May 2019 - August 2019',
+    link: 'https://www.microsoft.com/en-us/',
+    daterange: 'June 2020 - August 2020',
     points: [
-      'Worked on the Platform team at Tulip to improve their web-based tool for managing factories',
-      'Enhanced the usability of Tables, a popular feature that allows customers to manage databases'
-      + ' without any code by building new features, such as row deletion, a new datetime column type,'
-      + ' and real-time data syncing across services',
-      'Used fullstack technologies that ranged from the backend Meteor server and Go services to the'
-       + ' frontend React and Redux components',
-      'Learned the best practices of developing on large-scale code bases, such as unit testing',
+      "Built an extension for Azure Data Studio to add MySQL support, the platform’s #1 most requested feature, \
+      by refactoring the already-released Postgres extension backend to support multiple providers.",
+      "Added support for many of the features already supported in the Postgres extension, such as Intellisense, \
+      table definition handling, and live table editing.",
+      "Merged new backend into production code after fixing the 700+ test errors triggered by the reorganization."
     ],
   },
   {
-    company: 'LIINC Lab at Columbia DSI',
-    position: 'Research intern',
-    link: 'http://liinc.bme.columbia.edu/',
-    daterange: 'May 2018 - May 2019',
+    company: 'Tulip',
+    position: 'Software Engineering intern',
+    link: 'https://tulip.co',
+    daterange: 'June 2019 - August 2019',
     points: [
-      'Improved machine learning models, including Convolutional Neural Networks and Hidden Markov Models,'
-      + ' that were designed to process neural data by using Tensorflow, Keras, and Scikit-Learn',
-      'Conducted data signal processing steps, such as PCA and FFT, optimized model parameters using'
-      + ' early stopping and grid search, and ran experiments on a Google Cloud Platform virtual machine',
-      'Achieved 90% and higher model classification accuracy on labeled electroencephalography data sets',
+      "Increased feature richness of Tables, a tool inside Tulip’s platform that helps manufacturers manage and optimize \
+       assembly line processes by allowing them to view/edit their data in a table.",
+      "Added Tables features such as row deletion, a datetime type, real-time data syncing across clients.",
+      "Built features using full-stack technologies, including a Meteor + Go backend and React + Redux frontend."
     ],
   },
 ];
